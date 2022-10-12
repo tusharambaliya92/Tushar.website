@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Cart</title>
+    <link rel="stylesheet" href="css/cart.css">
+</head>
+<body>  
+ 
+    {{>navbar}}
+   {{#if addtocart}}
+       <div class="remove">
+         {{#each addtocart}}
+              <div class="cardremove" key={{_id}}>
+                <img src={{product.image}} class="proimg">
+                <div class="delete">
+                  <p>{{product.title}}</p>
+                  <p>RS.{{product.price}}</p>
+                   <a href="/deletecart/{{_id}}"><button class="btn5" >  Remove  </button></a> 
+                </div>
+              </div>
+    {{/each}}   
+<div class="total">
+  <p>Total Amount: &#8377; {{total}}</p>
+
+  <a href="/order"> <button class="payment" > Buy Now </button></a> 
+</div>
+ 
+</div>
+   {{else}}
+    <div class="error">
+    
+     <img src="https://digiemart.com/public/images/empty-cart.png" alt="" width="100%"> 
+      <a href="/product"><button class="shopping">continues shopping</button></a>
+    </div>
+   
+ {{/if}}
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+    <title>You Are Order</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/index.css">
+
+    
+</head>
+<body>
+
+ <div class="order" key={{_id}}>
+         </div> 
+<a href="/product"><button class="btn"><i class="fa fa-home"></i> Home</button></a>
+
+      <h1>You Are Order Datail: {{user.firstname}}</h1> 
+
+ <table class="content-table">
+   
+  <thead>
+    <tr>
+      <th>Image</th>
+       <th>Product Name</th>
+      <th>price</th>
+      <th>Address</th>
+      <th>Phone No.</th>
+
+    </tr>
+  </thead>
+  <tbody>
+       {{#each addtocart}}
+
+      {{#each cartdata}}
+    <tr  class="active-row">
+     <td><img src={{product.image}} class="orderImage" ></td>  
+      <td>{{product.title}}</td>  
+      <td>RS. {{product.price}}</td>
+    
+
+   
+        {{/each}}
+          <td>{{address}}</td>
+          <td>{{phone}}</td>
+
+           </tr>
+  {{/each}}
+
+  </tbody>
+</table>
+
+</body>
+</html>

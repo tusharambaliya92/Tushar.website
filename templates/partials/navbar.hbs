@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <title> Welcome to Senza</title>
+    
+   {{>header}}
+   </head>
+<body>
+  <nav>
+    <div class="menu">
+      <div class="logo">
+        <a href="/product">Senza</a>
+      </div>
+      <ul>
+        <li><a href="/product">Product</a></li>
+        <li><a href="/Orders">Order</a></li>
+     <div class="user">
+     <a href="/user">{{user.firstname}}</a>
+     </div>
+        <li><a href="/logout">Logout</a></li>
+       <li><a  href="/cart">
+       <span id="count">{{addtocart.length}}</span><i class="fa fa-shopping-cart"></i>
+            </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</body>
+
+</html>

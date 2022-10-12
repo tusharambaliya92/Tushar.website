@@ -1,0 +1,28 @@
+html{
+  height: 100%;
+
+}
+body{
+  display: flex;
+  flex-direction: column;
+ height: 100%;
+}
+.footer {
+
+  margin-bottom: 0;
+}
+p{
+  margin: 0;
+  padding: 0;
+}
+.footer p {
+    color: white;
+    background-color: black;
+    text-align: center;
+    text-transform: capitalize;
+    line-height: 3rem;
+    font-size: large;
+    font-weight: 500;
+}
+
+

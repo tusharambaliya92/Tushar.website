@@ -1,0 +1,43 @@
+{
+  "name": "mernbackend",
+  "homepage": "https://tusharambaliya92.github.io/node-js-product-project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon src/app.js -e js,hbs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "express-session": "^1.17.3",
+    "gh-pages": "^4.0.0",
+    "hbs": "^4.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.5.2",
+    "multer": "^1.4.5-lts.1",
+    "node-popup": "^0.1.14",
+    "noty": "^3.2.0-beta-deprecated",
+    "sweetalert": "^2.1.2",
+    "validator": "^13.7.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tusharambaliya92/node-js-product-project.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tusharambaliya92/node-js-product-project/issues"
+  },
+  "description": ""
+}

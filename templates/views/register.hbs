@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+
+    <title>Registration</title>
+       {{>header}}
+</head>
+<body  >
+    <div class="container">
+     <div class="from">
+        <form  action="/register" method="POST" enctype="multipart/form-data">
+     
+          <span class="title">Sign Up Now </span>
+          <div class="first">
+             <div class="col2">
+              <input
+                type="text"
+                placeholder="First Name"
+                name="firstname"
+                autoComplete="off"
+                required
+              />
+      
+            </div>
+
+            <div class="col2">
+              <input
+                type="text"
+                placeholder="Last Name"
+                name="lastname"
+                autoComplete="off"
+                required
+              />
+            </div>
+            </div>
+        <div class="first">
+         <div class="col2">
+              <input
+                type="text"              
+                name="email"
+                placeholder="Email Address"
+                autoComplete="off"
+                required        
+              />
+       
+            </div>
+         <div class="col2">
+              <div class="m">
+                <input
+               
+                  type="radio"
+                  name="gender"
+                  id="inlineRadio1"
+                  value="male"               
+                />
+                <label class="form-check-label" htmlFor="inlineRadio1">
+                  Male
+                </label>
+                </div>
+            <div class="m">
+                <input
+             
+                  type="radio"
+                  name="gender"
+                  id="inlineRadio2"
+                  value="female"              
+                />
+                <label class="form-check-label" htmlFor="inlineRadio2">
+                  Female
+                </label>
+            </div>
+          </div>
+          
+           
+
+
+            </div>
+            <div class="first">
+             <div class="col2">
+              <input
+                type="text"              
+                placeholder="Password"
+                name="password"
+                autoComplete="off"
+                required
+
+              />   
+            </div>
+           <div class="col2">
+              <input
+                type="text"
+                name="confirmpassword"           
+                placeholder="Confirm Password"
+                 autoComplete="off"
+                required
+
+              />            
+            </div>
+            </div>
+            <div class="first">
+               <div class="col2">
+              <input
+                type="text"
+                placeholder="Phone"
+                name="phone"
+                autoComplete="off"
+                required
+              />
+            </div>
+       <div class="col2">
+              <input
+                type="text"
+                placeholder="Your Age"
+                name="age"
+                autoComplete="off"
+                required
+              />
+            </div>
+          </div>
+
+           <div class="upload">
+               <div class="col3">
+                 Profile Image :
+                <input
+                type="file"
+               
+                name="file"
+            
+                required
+              />
+            </div>
+          </div>
+          
+          <div class="btn2">
+            <button
+              type="submit"
+                       
+            >
+              Sign Up Now
+          </div>
+        </form>
+          </button>
+               <div class="login-signup">
+                    <span class="text">Already a member?
+                        <a href="/login" class="text login-link">Login Now</a>
+                    </span>
+                </div>
+      </div>
+     </div>
+</body>
+</html>

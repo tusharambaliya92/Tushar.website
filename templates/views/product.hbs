@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title> Welcome to Senza</title>
+<link rel="stylesheet" href="css/product.css">
+
+</head>
+<body onload="myFunction()">
+    {{>navbar}}
+    <div id="loading"></div>
+    <form >
+    <div class="wrap">
+   <div class="search">
+      <input type="text"  id="search" name="search"  autocomplete="off" placeholder="Search product....">
+     <button type="submit"  class="searchButton">
+        <i class="fa fa-search"></i>
+     </button>
+   </div>
+</div>
+</form>
+       <div class="Wrapper">
+         {{#each productData}}
+              <div class="card2" key={{_id}} >
+                <img src={{image}} class="proimg">
+                  <p>{{title}}</p>
+                  <p>RS. {{price}}</p>
+                  <a href="/addtocart/{{_id}}">  <button class="btn2" > Add to cart </button></a> 
+
+
+              </div>
+
+    {{/each}}
+</div>
+<script>
+
+		var preloader = document.getElementById("loading");
+		function myFunction(){
+			preloader.style.display = 'none';
+		};
+	</script>
+
+</body>
+</html>

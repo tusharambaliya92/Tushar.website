@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+    <title>login</title>
+      {{>header}}
+</head>
+<body>
+    
+<div class="box">
+  <div class="form1">
+    <form action="/login" method="POST">
+         <span class="title1">Login Now </span>
+             <div class="col1">
+               <input
+                type="text"              
+                placeholder="Email Address"
+                name="email"
+                autoComplete="off"
+                title="Please Enter Email"
+                required
+              />   
+            </div>
+        <div class="col1">
+          <input
+                type="text"              
+                placeholder="Password"
+                name="password"
+                autoComplete="off"
+                title="Please Enter Password"
+                required
+              />   
+            </div>
+             <div class="btn1">
+            <button
+              type="submit"         
+            >
+            Login Now
+            </button>
+               </div>
+            </form>
+           <div class="login-signup1">
+                    <span class="text">Not a member?
+                        <a href="/register" class="text login-link">Signup Now</a>
+                    </span>
+                </div>
+    </div>
+     </div>
+
+</body>
+</html>

@@ -1,0 +1,95 @@
+.remove{
+    display: grid;
+    gap: 15px;
+    position: relative;
+    top: 110px;
+  }
+  .cardremove{
+    background: white;
+    height: 130px;
+    width: 75%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px 0px;
+    font-size: 20px;
+    display: flex;
+    margin-left: 10px;
+  }
+  .delete{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .delete p{
+    margin-left: 200px;
+    font-size: medium;
+    position: relative;
+    top: 10px;
+  }
+  .delete a{
+    margin-left: 100px;
+  }
+  button.btn5 {
+    border: none;
+    outline: none;
+    background-color: rgb(255, 153, 0);
+    padding: 5px 45px;
+    color: rgb(255, 0, 0);
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  button.btn5:hover {
+      background-color: red;
+      color: #000;
+  }
+  .total{
+    color: black;
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    position: fixed;
+    left: 1015px;
+    background-color: white;
+    height: 129px;
+    width: 245px;
+    border-radius: 5px;
+  }
+  .total p{
+    margin-top: 5px;
+  }
+  button.payment{
+    border: none;
+    outline: none;
+    background-color: #fb641b;
+    padding: 5px 45px;
+    margin-top:25px;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 200px;
+    transition: all 0.3s ease-in-out;
+  
+  }
+  .error {
+    position: absolute;
+    top: 15%;
+    width: 100%;
+    padding: 0px 400px;
+  }
+  .error button{
+    background: crimson;
+    margin-top: 10px;
+    margin-left: 135px;
+    order: none;
+    color: #fff;
+    font-size: 16px;
+    width: 50%;
+    height: 45px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 6px;
+  }
